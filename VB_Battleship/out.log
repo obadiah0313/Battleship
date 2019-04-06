@@ -1,0 +1,8 @@
+Visual Basic.Net Compiler version 0.0.0.5943 (Mono 3.8 - mono-4.0.0-branch/0669cae)
+Copyright (C) 2004-2010 Rolf Bjarne Kvinge. All rights reserved.
+
+vbnc : Command line : warning VBNC2009: the option platform was not recognized - ignored
+Assembly 'battleships, Version=0.0, Culture=neutral, PublicKeyToken=null' saved successfully to '/Users/cwoodward/Desktop/battleships/bin/Debug/battleships.exe'.
+There were 0 errors and 1 warnings.
+Compilation successful
+Compilation took 00:00:00.9190030
