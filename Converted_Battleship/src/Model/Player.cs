@@ -203,7 +203,6 @@ public class Player : IEnumerable<Ship>
 				_misses += 1;
 				break;
 		}
-
 		return result;
 	}
 	/// <summary>
