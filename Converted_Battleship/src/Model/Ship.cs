@@ -105,16 +105,16 @@ public class Ship
 	/// <summary>
 	/// Remove clears the tile back to a sea tile
 	/// </summary>
-	public void Remove()
+	public void Remove ()
 	{
 		foreach (Tile tile in _tiles) {
-			tile.ClearShip();
+			tile.ClearShip ();
 		}
-		_tiles.Clear();
+		_tiles.Clear ();
 	}
 
 	/// <summary>
-	/// Hit this enemy's ship.
+	/// Hit this enemy's ship. If hitted, continue to attack.
 	/// </summary>
 	public void Hit()
 	{
