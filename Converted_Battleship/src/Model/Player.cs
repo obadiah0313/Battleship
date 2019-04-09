@@ -116,11 +116,24 @@ public class Player : IEnumerable<Ship>
 		get { return _misses; }
 	}
 
+	/// <summary>
+	/// Gets the score.
+	/// </summary>
+	/// <value>The score.</value>
 	public int Score {
 		get {
+			/// <summary>
+			/// If we get destroyed, our score will be zero
+			/// </summary>
+			/// <returns>The score will return zero</returns>
 			if (IsDestroyed) {
 				return 0;
-			} else {
+			}
+			/// <summary>
+			/// Else we destroyed the enemy, the score will follow by the formula.
+			/// </summary>
+			/// <returns>The ship enumerator.</returns>
+			else {
 				return (Hits * 12) - Shots - (PlayerGrid.ShipsKilled * 20);
 			}
 		}
