@@ -1,0 +1,38 @@
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\animations\startup.txt
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\bundles\FileDialog.txt
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\bundles\splash.txt
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\fonts\arial.ttf
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\fonts\cour.ttf
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\fonts\maven_pro_regular.ttf
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\images\fdFile.png
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\images\fdFolder.png
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\images\FileDialog_Active.png
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\images\FileDialog_Background.png
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\images\FileDialog_Inactive.png
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\images\FileDialog_Scroll.png
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\images\FileDialog_ScrollSmall.png
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\images\Swinburne.jpg
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\images\SwinGameAni.png
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\panels\FileDialog.txt
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\sounds\error.wav
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\sounds\SwinGameStart.wav
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\SwinGame.icns
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Resources\SwinGame.ico
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\Converted Battleship.exe
+C:\Users\user\Documents\Projects\ProjectTemplate\bin\Debug\SwinGame.dll
+C:\Users\user\Documents\Projects\ProjectTemplate\obj\x86\Debug-Windows\Converted Battleship.exe
+C:\Users\user\Documents\Projects\Converted Battleship\bin\Debug\Resources\animations\startup.txt
+C:\Users\user\Documents\Projects\Converted Battleship\bin\Debug\Resources\bundles\FileDialog.txt
+C:\Users\user\Documents\Projects\Converted Battleship\bin\Debug\Resources\bundles\splash.txt
+C:\Users\user\Documents\Projects\Converted Battleship\bin\Debug\Resources\fonts\arial.ttf
+C:\Users\user\Documents\Projects\Converted Battleship\bin\Debug\Resources\fonts\cour.ttf
+C:\Users\user\Documents\Projects\Converted Battleship\bin\Debug\Resources\fonts\maven_pro_regular.ttf
+C:\Users\user\Documents\Projects\Converted Battleship\bin\Debug\Resources\panels\FileDialog.txt
+C:\Users\user\Documents\Projects\Converted Battleship\bin\Debug\Resources\sounds\error.wav
+C:\Users\user\Documents\Projects\Converted Battleship\bin\Debug\Resources\sounds\SwinGameStart.wav
+C:\Users\user\Documents\Projects\Converted Battleship\bin\Debug\Resources\SwinGame.icns
+C:\Users\user\Documents\Projects\Converted Battleship\bin\Debug\Resources\SwinGame.ico
+C:\Users\user\Documents\Projects\Converted Battleship\bin\Debug\Converted Battleship.exe
+C:\Users\user\Documents\Projects\Converted Battleship\bin\Debug\SwinGame.dll
+C:\Users\user\Documents\Projects\Converted Battleship\obj\x86\Debug-Windows\Converted Battleship.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Projects\Converted Battleship\obj\x86\Debug-Windows\Converted Battleship.exe
