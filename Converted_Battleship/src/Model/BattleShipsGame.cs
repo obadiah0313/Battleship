@@ -1,4 +1,5 @@
 using Microsoft.VisualBasic;
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -27,9 +28,13 @@ public class BattleShipsGame
 	/// This is used by the UI to play sound effects etc.
 	/// </remarks>
 	public event AttackCompletedHandler AttackCompleted;
-
+	/// <summary>
+	/// set array with 3 player.
+	/// </summary>
 	private Player[] _players = new Player[3];
-
+	/// <summary>
+	/// The index of the player.
+	/// </summary>
 	private int _playerIndex = 0;
 	/// <summary>
 	/// The current player.
@@ -48,6 +53,9 @@ public class BattleShipsGame
 	/// <param name="p"></param>
 	public void AddDeployedPlayer(Player p)
 	{
+		/// <summary>
+		/// Completes the deployment.
+		/// </summary>
 		if (_players[0] == null) {
 			_players[0] = p;
 		} else if (_players[1] == null) {
