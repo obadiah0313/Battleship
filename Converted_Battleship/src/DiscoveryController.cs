@@ -23,7 +23,9 @@ static class DiscoveryController
 		if (SwinGame.KeyTyped(KeyCode.vk_ESCAPE)) {
 			GameController.AddNewState(GameState.ViewingGameMenu);
 		}
-
+		/// <summary>
+		/// When the mouse's left button clicked the ship will attack the location that mouce pointed. 
+		/// </summary>
 		if (SwinGame.MouseClicked(MouseButton.LeftButton)) {
 			DoAttack();
 		}

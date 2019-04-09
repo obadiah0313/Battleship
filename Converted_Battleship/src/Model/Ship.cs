@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 /// <summary>
 /// A Ship has all the details about itself. For example the shipname,
-/// size, number of hits taken and the location. Its able to add tiles,
+/// size, number of hits taken and the location like the row and column. Its able to add tiles,
 /// remove, hits taken and if its deployed and destroyed.
 /// </summary>
 /// <remarks>
@@ -63,15 +63,27 @@ public class Ship
 	public int Row {
 		get { return _row; }
 	}
-
+	/// <summary>
+	/// The column location of the ship
+	/// </summary>
+	/// <value>The topmost location of the ship</value>
+	/// <returns>the column of the ship</returns>
 	public int Column {
 		get { return _col; }
 	}
 
+	/// <summary>
+	/// Gets the direction of the ship.
+	/// </summary>
+	/// <value>The direction of the ship.</value>
 	public Direction Direction {
 		get { return _direction; }
 	}
 
+	/// <summary>
+	/// Initializes a new Ship to Tile class.
+	/// </summary>
+	/// <param name="ship">Ship.</param>
 	public Ship(ShipName ship)
 	{
 		_shipName = ship;
@@ -101,6 +113,9 @@ public class Ship
 		_tiles.Clear();
 	}
 
+	/// <summary>
+	/// Hit this enemy's ship.
+	/// </summary>
 	public void Hit()
 	{
 		_hitsTaken = _hitsTaken + 1;
