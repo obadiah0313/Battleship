@@ -122,7 +122,12 @@ public static class GameController
 		if (showAnimation) {
 			UtilityFunctions.AddExplosion(row, column);
 		}
-
+		/// <summary>
+		/// add hit sound.
+		/// </summary>
+		/// <param name="row">Row.</param>
+		/// <param name="column">Column.</param>
+		/// <param name="showAnimation">If set to <c>true</c> show animation.</param>
 		Audio.PlaySoundEffect(GameResources.GameSound("Hit"));
 
 		UtilityFunctions.DrawAnimationSequence();

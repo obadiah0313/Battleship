@@ -176,7 +176,9 @@ static class DeploymentController
 				return sn;
 			}
 		}
-
+		/// <summary>
+		/// Return Shipname when done progress.
+		/// </summary>
 		return ShipName.None;
 	}
 }
