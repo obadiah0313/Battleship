@@ -16,6 +16,7 @@ public abstract class AIPlayer : Player
 	/// Location can store the location of the last hit made by an
 	/// AI Player. The use of which determines the difficulty.
 	/// </summary>
+
 	protected class Location
 	{
 		private int _Row;
