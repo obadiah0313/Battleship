@@ -51,3 +51,9 @@ C:\Battleship\Converted_Battleship\bin\Debug\Converted Battleship.exe
 C:\Battleship\Converted_Battleship\bin\Debug\SwinGame.dll
 C:\Battleship\Converted_Battleship\obj\x86\Debug-Windows\Converted Battleship.csprojResolveAssemblyReference.cache
 C:\Battleship\Converted_Battleship\obj\x86\Debug-Windows\Converted Battleship.exe
+C:\Battleship\Converted_Battleship\bin\Debug\mscorlib.dll
+C:\Battleship\Converted_Battleship\bin\Debug\normidna.nlp
+C:\Battleship\Converted_Battleship\bin\Debug\normnfc.nlp
+C:\Battleship\Converted_Battleship\bin\Debug\normnfd.nlp
+C:\Battleship\Converted_Battleship\bin\Debug\normnfkc.nlp
+C:\Battleship\Converted_Battleship\bin\Debug\normnfkd.nlp
