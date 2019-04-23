@@ -7,7 +7,12 @@
   <MonoDevelop.Ide.ItemProperties.Converted_220Battleship PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Converted_Battleship Status">
     <Files>
-      <File FileName="src\DeploymentController.cs" Line="111" Column="43" />
+      <File FileName="src\GameLogic.cs" Line="26" Column="15" />
+      <File FileName="src\GameState.cs" Line="54" Column="6" />
+      <File FileName="src\GameController.cs" Line="308" Column="3" />
+      <File FileName="src\MenuController.cs" Line="160" Column="2" />
+      <File FileName="src\GameResources.cs" Line="60" Column="11" />
+      <File FileName="src\HighScoreController.cs" Line="150" Column="2" />
       <File FileName="Converted_Battleship Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>

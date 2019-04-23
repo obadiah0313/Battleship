@@ -78,3 +78,5 @@ C:\Battleship\Battleship\Converted_Battleship\bin\Debug\normnfkc.nlp
 C:\Battleship\Battleship\Converted_Battleship\bin\Debug\normnfkd.nlp
 C:\Battleship\Battleship\Converted_Battleship\obj\x86\Debug-Windows\Converted Battleship.csprojResolveAssemblyReference.cache
 C:\Battleship\Battleship\Converted_Battleship\obj\x86\Debug-Windows\Converted Battleship.exe
+C:\Battleship\Converted_Battleship\bin\Debug\Resources\images\help.png
+C:\Battleship\Converted_Battleship\bin\Debug\Resources\sounds\background.mp3

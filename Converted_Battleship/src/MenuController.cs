@@ -20,11 +20,12 @@ public class MenuController
 	/// <remarks>
 	/// These are the text captions for the menu items.
 	/// </remarks>
-	private static readonly string[][] _menuStructure = {
+	private static readonly string [] [] _menuStructure = {
 		new string[] {
 			"PLAY",
 			"SETUP",
 			"SCORES",
+			"HELP",
 			"QUIT"
 		},
 		new string[] {
@@ -54,8 +55,9 @@ public class MenuController
 	private const int MAIN_MENU_PLAY_BUTTON = 0;
 	private const int MAIN_MENU_SETUP_BUTTON = 1;
 	private const int MAIN_MENU_TOP_SCORES_BUTTON = 2;
+	private const int MAIN_MENU_HELP_BUTTON = 3;
 
-	private const int MAIN_MENU_QUIT_BUTTON = 3;
+	private const int MAIN_MENU_QUIT_BUTTON = 4;
 	private const int SETUP_MENU_EASY_BUTTON = 0;
 	private const int SETUP_MENU_MEDIUM_BUTTON = 1;
 	private const int SETUP_MENU_HARD_BUTTON = 2;
@@ -65,27 +67,34 @@ public class MenuController
 	private const int GAME_MENU_SURRENDER_BUTTON = 1;
 
 	private const int GAME_MENU_QUIT_BUTTON = 2;
-	private static readonly Color MENU_COLOR = SwinGame.RGBAColor(2, 167, 252, 255);
+	private static readonly Color MENU_COLOR = SwinGame.RGBAColor (2, 167, 252, 255);
 
-	private static readonly Color HIGHLIGHT_COLOR = SwinGame.RGBAColor(1, 57, 86, 255);
+	private static readonly Color HIGHLIGHT_COLOR = SwinGame.RGBAColor (1, 57, 86, 255);
 	/// <summary>
 	/// Handles the processing of user input when the main menu is showing
 	/// </summary>
-	public static void HandleMainMenuInput()
+	public static void HandleMainMenuInput ()
 	{
-		HandleMenuInput(MAIN_MENU, 0, 0);
+		HandleMenuInput (MAIN_MENU, 0, 0);
+	}
+
+	public static void HandleHelpInput ()
+	{
+		if (SwinGame.MouseClicked (MouseButton.LeftButton) || SwinGame.KeyTyped (KeyCode.vk_ESCAPE) || SwinGame.KeyTyped (KeyCode.vk_RETURN)) {
+			GameController.EndCurrentState ();
+		}
 	}
 
 	/// <summary>
 	/// Handles the processing of user input when the main menu is showing
 	/// </summary>
-	public static void HandleSetupMenuInput()
+	public static void HandleSetupMenuInput ()
 	{
 		bool handled = false;
-		handled = HandleMenuInput(SETUP_MENU, 1, 1);
+		handled = HandleMenuInput (SETUP_MENU, 1, 1);
 
 		if (!handled) {
-			HandleMenuInput(MAIN_MENU, 0, 0);
+			HandleMenuInput (MAIN_MENU, 0, 0);
 		}
 	}
 
@@ -95,9 +104,9 @@ public class MenuController
 	/// <remarks>
 	/// Player can return to the game, surrender, or quit entirely
 	/// </remarks>
-	public static void HandleGameMenuInput()
+	public static void HandleGameMenuInput ()
 	{
-		HandleMenuInput(GAME_MENU, 0, 0);
+		HandleMenuInput (GAME_MENU, 0, 0);
 	}
 
 	/// <summary>
@@ -107,26 +116,26 @@ public class MenuController
 	/// <param name="level">the vertical level of the menu</param>
 	/// <param name="xOffset">the xoffset of the menu</param>
 	/// <returns>false if a clicked missed the buttons. This can be used to check prior menus.</returns>
-	private static bool HandleMenuInput(int menu, int level, int xOffset)
+	private static bool HandleMenuInput (int menu, int level, int xOffset)
 	{
-		if (SwinGame.KeyTyped(KeyCode.vk_ESCAPE)) {
-			GameController.EndCurrentState();
+		if (SwinGame.KeyTyped (KeyCode.vk_ESCAPE)) {
+			GameController.EndCurrentState ();
 			return true;
 		}
 
-		if (SwinGame.MouseClicked(MouseButton.LeftButton)) {
+		if (SwinGame.MouseClicked (MouseButton.LeftButton)) {
 			int i = 0;
-			for (i = 0; i <= _menuStructure[menu].Length - 1; i++) {
+			for (i = 0; i <= _menuStructure [menu].Length - 1; i++) {
 				//IsMouseOver the i'th button of the menu
-				if (IsMouseOverMenu(i, level, xOffset)) {
-					PerformMenuAction(menu, i);
+				if (IsMouseOverMenu (i, level, xOffset)) {
+					PerformMenuAction (menu, i);
 					return true;
 				}
 			}
 
 			if (level > 0) {
 				//none clicked - so end this sub menu
-				GameController.EndCurrentState();
+				GameController.EndCurrentState ();
 			}
 		}
 
@@ -136,12 +145,17 @@ public class MenuController
 	/// <summary>
 	/// Draws the main menu to the screen.
 	/// </summary>
-	public static void DrawMainMenu()
+	public static void DrawMainMenu ()
 	{
 		//Clears the Screen to Black
 		//SwinGame.DrawText("Main Menu", Color.White, GameFont("ArialLarge"), 50, 50)
 
-		DrawButtons(MAIN_MENU);
+		DrawButtons (MAIN_MENU);
+	}
+
+	public static void DrawHelp ()
+	{
+		SwinGame.DrawBitmap (GameResources.GameImage ("Help"), 220, 57);
 	}
 
 	/// <summary>
@@ -268,6 +282,9 @@ public class MenuController
 				break;
 			case MAIN_MENU_TOP_SCORES_BUTTON:
 				GameController.AddNewState(GameState.ViewingHighScores);
+				break;
+			case MAIN_MENU_HELP_BUTTON:
+				GameController.AddNewState (GameState.Help);
 				break;
 			case MAIN_MENU_QUIT_BUTTON:
 				GameController.EndCurrentState();
