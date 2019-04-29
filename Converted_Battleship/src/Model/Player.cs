@@ -16,6 +16,7 @@ public class Player : IEnumerable<Ship>
 	private ISeaGrid _enemyGrid;
 
 	protected BattleShipsGame _game;
+	private int _avail;
 	private int _shots;
 	private int _hits;
 
@@ -105,6 +106,11 @@ public class Player : IEnumerable<Ship>
 
 	public int Hits {
 		get { return _hits; }
+	}
+
+	public int Available {
+		get { return _avail; }
+		set { _avail = value; }
 	}
 
 	/// <summary>
