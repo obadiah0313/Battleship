@@ -81,3 +81,5 @@ C:\Battleship\Battleship\Converted_Battleship\obj\x86\Debug-Windows\Converted Ba
 C:\Battleship\Converted_Battleship\bin\Debug\Resources\images\help.png
 C:\Battleship\Converted_Battleship\bin\Debug\Resources\sounds\background.mp3
 C:\Battleship\Converted_Battleship\bin\Debug\Resources\images\discover.jpg
+C:\Battleship\Converted_Battleship\bin\Debug\Resources\sounds\random.wav
+C:\Battleship\Converted_Battleship\bin\Debug\Resources\sounds\leftright.wav

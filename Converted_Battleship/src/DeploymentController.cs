@@ -54,10 +54,13 @@ static class DeploymentController
 		}
 		if (SwinGame.KeyTyped(KeyCode.vk_LEFT) | SwinGame.KeyTyped(KeyCode.vk_RIGHT)) {
 			_currentDirection = Direction.LeftRight;
+
 		}
 
 		if (SwinGame.KeyTyped(KeyCode.vk_r)) {
 			GameController.HumanPlayer.RandomizeDeployment();
+
+
 		}
 
 		if (SwinGame.MouseClicked(MouseButton.LeftButton)) {
@@ -73,10 +76,14 @@ static class DeploymentController
 				GameController.EndDeployment();
 			} else if (UtilityFunctions.IsMouseInRectangle(UP_DOWN_BUTTON_LEFT, TOP_BUTTONS_TOP, DIR_BUTTONS_WIDTH, TOP_BUTTONS_HEIGHT)) {
 				_currentDirection = Direction.UpDown;
+				Audio.PlaySoundEffect (GameResources.GameSound ("LeftRight"));
 			} else if (UtilityFunctions.IsMouseInRectangle(LEFT_RIGHT_BUTTON_LEFT, TOP_BUTTONS_TOP, DIR_BUTTONS_WIDTH, TOP_BUTTONS_HEIGHT)) {
 				_currentDirection = Direction.LeftRight;
+				Audio.PlaySoundEffect (GameResources.GameSound ("LeftRight"));
 			} else if (UtilityFunctions.IsMouseInRectangle(RANDOM_BUTTON_LEFT, TOP_BUTTONS_TOP, RANDOM_BUTTON_WIDTH, TOP_BUTTONS_HEIGHT)) {
 				GameController.HumanPlayer.RandomizeDeployment();
+				Audio.PlaySoundEffect (GameResources.GameSound ("Random"));
+			
 			}
 		}
 	}
