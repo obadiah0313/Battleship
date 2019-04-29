@@ -21,6 +21,8 @@ public static class GameController
 	private static Stack<GameState> _state = new Stack<GameState>();
 
 	public static AIOption _aiSetting;
+
+	public static int count;
 	/// <summary>
 	/// Returns the current state of the game, indicating which screen is
 	/// currently being used
@@ -89,6 +91,8 @@ public static class GameController
 		}
 
 		_human = new Player(_theGame);
+
+		count = 5;
 
 		//AddHandler _human.PlayerGrid.Changed, AddressOf GridChanged
 		_ai.PlayerGrid.Changed += GridChanged;
@@ -168,7 +172,8 @@ public static class GameController
 
 		switch (result.Value) {
 			case ResultOfAttack.Destroyed:
-				PlayHitSequence(result.Row, result.Column, isHuman);
+				PlayHitSequence (result.Row, result.Column, isHuman);
+				count--;
 				Audio.PlaySoundEffect(GameResources.GameSound("Sink"));
 
 				break;
