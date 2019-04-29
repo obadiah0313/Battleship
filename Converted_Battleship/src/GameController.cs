@@ -21,7 +21,7 @@ public static class GameController
 	private static Stack<GameState> _state = new Stack<GameState>();
 
 	public static AIOption _aiSetting;
-
+	public static int avail;
 	public static int count;
 	/// <summary>
 	/// Returns the current state of the game, indicating which screen is
@@ -81,9 +81,11 @@ public static class GameController
 				break;
 			case AIOption.Medium:
 				_ai = new AIMediumPlayer(_theGame);
+				avail = 10;
 				break;
 			case AIOption.Hard:
 				_ai = new AIHardPlayer(_theGame);
+				avail = 5;
 				break;
 			default:
 				_ai = new AIEasyPlayer(_theGame);
@@ -91,6 +93,7 @@ public static class GameController
 		}
 
 		_human = new Player(_theGame);
+		_human.Available = avail;
 
 		count = 5;
 
