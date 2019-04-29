@@ -73,6 +73,18 @@ static class DiscoveryController
 		UtilityFunctions.DrawSmallField(GameController.HumanPlayer.PlayerGrid, GameController.HumanPlayer);
 		UtilityFunctions.DrawMessage();
 
+		if (GameController.ComputerPlayer.ToString ().Equals ("AIMediumPlayer"))
+		{
+			SwinGame.DrawText ("Available Shot(s) : ", Color.White, GameResources.GameFont ("Menu"), 172, 100);
+			SwinGame.DrawText (GameController.HumanPlayer.Available.ToString (), Color.White, GameResources.GameFont ("Menu"), 310, 100);
+		}
+		else if (GameController.ComputerPlayer.ToString ().Equals ("AIHardPlayer"))
+		{
+			SwinGame.DrawText ("Available Shot(s) : ", Color.White, GameResources.GameFont ("Menu"), 172, 100);
+			SwinGame.DrawText (GameController.HumanPlayer.Available.ToString (), Color.White, GameResources.GameFont ("Menu"), 310, 100);
+		}
+
+
 		SwinGame.DrawText(GameController.HumanPlayer.Shots.ToString(), Color.White, GameResources.GameFont("Menu"), SCORES_LEFT, SHOTS_TOP);
 		SwinGame.DrawText(GameController.HumanPlayer.Hits.ToString(), Color.White, GameResources.GameFont("Menu"), SCORES_LEFT, HITS_TOP);
 		SwinGame.DrawText(GameController.HumanPlayer.Missed.ToString(), Color.White, GameResources.GameFont("Menu"), SCORES_LEFT, SPLASH_TOP);
