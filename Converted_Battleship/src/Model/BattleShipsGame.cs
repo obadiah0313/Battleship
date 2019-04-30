@@ -95,6 +95,10 @@ public class BattleShipsGame
 			newAttack = new AttackResult(ResultOfAttack.GameOver, newAttack.Ship, newAttack.Text, row, col);
 		}
 
+		if (_players[0].IsFailed) {
+			newAttack = new AttackResult(ResultOfAttack.GameOver, newAttack.Ship, newAttack.Text, row, col);
+		}
+
 		if (AttackCompleted != null) {
 			AttackCompleted(this, newAttack);
 		}
