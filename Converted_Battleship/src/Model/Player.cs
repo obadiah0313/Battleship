@@ -81,6 +81,11 @@ public class Player : IEnumerable<Ship>
 		get { return _playerGrid.ShipsKilled == Enum.GetValues(typeof(ShipName)).Length - 1; }
 	}
 
+	public bool IsFailed {
+		//Check if available shots still remaining
+		get { return Available == 0; }
+	}
+
 	/// <summary>
 	/// Returns the Player's ship with the given name.
 	/// </summary>
@@ -204,9 +209,18 @@ public class Player : IEnumerable<Ship>
 			case ResultOfAttack.Destroyed:
 			case ResultOfAttack.Hit:
 				_hits += 1;
+				if (GameController.ComputerPlayer.ToString ().Equals ("AIMediumPlayer"))
+				{
+					Available = 10;
+				}
+				else if (GameController.ComputerPlayer.ToString ().Equals ("AIHardPlayer"))
+				{
+					Available = 5;
+				}
 				break;
 			case ResultOfAttack.Miss:
 				_misses += 1;
+				_avail -= 1;
 				break;
 		}
 		return result;
