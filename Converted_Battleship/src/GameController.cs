@@ -78,6 +78,7 @@ public static class GameController
 		switch (_aiSetting) {
 			case AIOption.Easy:
 				_ai = new AIEasyPlayer(_theGame);
+				avail = 10000;
 				break;
 			case AIOption.Medium:
 				_ai = new AIMediumPlayer(_theGame);
@@ -88,7 +89,8 @@ public static class GameController
 				avail = 5;
 				break;
 			default:
-				_ai = new AIEasyPlayer(_theGame);
+				_ai = new AIEasyPlayer (_theGame);
+				avail = 10000;
 				break;
 		}
 
@@ -172,7 +174,6 @@ public static class GameController
 		} else {
 			UtilityFunctions.Message = "The AI " + result.ToString();
 		}
-
 		switch (result.Value) {
 			case ResultOfAttack.Destroyed:
 				PlayHitSequence (result.Row, result.Column, isHuman);
@@ -189,7 +190,7 @@ public static class GameController
 					SwinGame.RefreshScreen();
 				}
 
-				if (HumanPlayer.IsDestroyed) {
+				if (HumanPlayer.IsDestroyed || HumanPlayer.IsFailed) {
 					Audio.PlaySoundEffect(GameResources.GameSound("Lose"));
 				} else {
 					Audio.PlaySoundEffect(GameResources.GameSound("Winner"));
@@ -197,10 +198,10 @@ public static class GameController
 
 				break;
 			case ResultOfAttack.Hit:
-				PlayHitSequence(result.Row, result.Column, isHuman);
+				PlayHitSequence (result.Row, result.Column, isHuman);
 				break;
 			case ResultOfAttack.Miss:
-				PlayMissSequence(result.Row, result.Column, isHuman);
+				PlayMissSequence (result.Row, result.Column, isHuman);
 				break;
 			case ResultOfAttack.ShotAlready:
 				Audio.PlaySoundEffect(GameResources.GameSound("Error"));
