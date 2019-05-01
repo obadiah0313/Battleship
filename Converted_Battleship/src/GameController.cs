@@ -82,11 +82,11 @@ public static class GameController
 				break;
 			case AIOption.Medium:
 				_ai = new AIMediumPlayer(_theGame);
-				avail = 10;
+				avail = 10; // limit shot with 10
 				break;
 			case AIOption.Hard:
 				_ai = new AIHardPlayer(_theGame);
-				avail = 5;
+				avail = 5; // limit shot with 5
 				break;
 			default:
 				_ai = new AIEasyPlayer (_theGame);
