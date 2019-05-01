@@ -73,7 +73,7 @@ static class DiscoveryController
 		UtilityFunctions.DrawSmallField(GameController.HumanPlayer.PlayerGrid, GameController.HumanPlayer);
 		UtilityFunctions.DrawMessage();
 
-		//Drawing the available shots for medium and hard level
+		//Drawing the available shots for player in medium and hard level
 		if (GameController.ComputerPlayer.ToString ().Equals ("AIMediumPlayer"))
 		{
 			SwinGame.DrawText ("Available Shot(s) : ", Color.White, GameResources.GameFont ("Menu"), 172, 100);
