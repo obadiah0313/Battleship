@@ -27,7 +27,14 @@ static class DiscoveryController
 		/// When the mouse's left button clicked the ship will attack the location that mouce pointed. 
 		/// </summary>
 		if (SwinGame.MouseClicked(MouseButton.LeftButton)) {
-			DoAttack();
+			if (UtilityFunctions.IsMouseInRectangle (693, 72, 50, 50))
+			{
+				GameController.AddNewState (GameState.ViewingGameMenu);
+			}
+			else
+			{
+				DoAttack ();
+			}
 		}
 	}
 
@@ -85,7 +92,7 @@ static class DiscoveryController
 			SwinGame.DrawText (GameController.HumanPlayer.Available.ToString (), Color.White, GameResources.GameFont ("Menu"), 310, 100);
 		}
 
-
+		SwinGame.DrawBitmap(GameResources.GameImage("PauseButton"), 693, 72);
 		SwinGame.DrawText(GameController.HumanPlayer.Shots.ToString(), Color.White, GameResources.GameFont("Menu"), SCORES_LEFT, SHOTS_TOP);
 		SwinGame.DrawText(GameController.HumanPlayer.Hits.ToString(), Color.White, GameResources.GameFont("Menu"), SCORES_LEFT, HITS_TOP);
 		SwinGame.DrawText(GameController.HumanPlayer.Missed.ToString(), Color.White, GameResources.GameFont("Menu"), SCORES_LEFT, SPLASH_TOP);
