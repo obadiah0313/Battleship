@@ -72,7 +72,7 @@ static class DiscoveryController
 		const int HITS_TOP = 206;
 		const int SPLASH_TOP = 256;
 
-				UtilityFunctions.DrawSmallField(GameController.HumanPlayer.PlayerGrid, GameController.HumanPlayer);
+		UtilityFunctions.DrawSmallField(GameController.HumanPlayer.PlayerGrid, GameController.HumanPlayer);
 		UtilityFunctions.DrawMessage();
 
 		//Drawing the available shots for player in medium and hard level
