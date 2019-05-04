@@ -81,14 +81,14 @@ static class DiscoveryController
 			
 			SwinGame.DrawText ("Available Shot(s) : ", Color.White, GameResources.GameFont ("Menu"), 172, 100);
 			SwinGame.DrawText (GameController.HumanPlayer.Available.ToString (), Color.White, GameResources.GameFont ("Menu"), 310, 100);
-			SwinGame.DrawText ("Time Left : ", Color.White, GameResources.GameFont ("Menu"), 350, 100);
+			//SwinGame.DrawText ("Time Left : ", Color.White, GameResources.GameFont ("Menu"), 350, 100);
 
 		}
 		else if (GameController.ComputerPlayer.ToString ().Equals ("AIHardPlayer"))
 		{
 			SwinGame.DrawText ("Available Shot(s) : ", Color.White, GameResources.GameFont ("Menu"), 172, 100);
 			SwinGame.DrawText (GameController.HumanPlayer.Available.ToString (), Color.White, GameResources.GameFont ("Menu"), 310, 100);
-			SwinGame.DrawText ("Time Left : "  , Color.White, GameResources.GameFont ("Menu"), 350, 100);
+			//SwinGame.DrawText ("Time Left : "  , Color.White, GameResources.GameFont ("Menu"), 350, 100);
 
 		}
 			
@@ -99,7 +99,7 @@ static class DiscoveryController
 		SwinGame.DrawText (GameController.count.ToString (), Color.White, GameResources.GameFont ("Menu"), SCORES_LEFT, 306);
 		//let computer ship visiable
 		UtilityFunctions.DrawField (GameController.ComputerPlayer.PlayerGrid, GameController.ComputerPlayer, false);
-
+		SwinGame.DrawText ("Press \"C\" to show AI ships", Color.White, GameResources.GameFont ("Menu"), 172, 570);
 		//Cheat code
 		if (SwinGame.KeyDown(KeyCode.vk_c)) {
 			UtilityFunctions.DrawField (GameController.ComputerPlayer.PlayerGrid, GameController.ComputerPlayer, true);
