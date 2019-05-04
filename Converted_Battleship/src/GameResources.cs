@@ -33,6 +33,8 @@ public static class GameResources
 
 		//Gameplay
 		NewImage("PauseButton","pause_button.png");
+		NewImage("Win", "you_win.png");
+		NewImage("Lose", "you_lose.png");
 
 		//Ships
 		int i = 0;
