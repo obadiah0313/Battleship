@@ -24,6 +24,7 @@ public static class GameController
 	public static AIOption _aiSetting;
 	public static int avail;
 	public static int count;
+	public static bool timeleft;
 	/// <summary>
 	/// Returns the current state of the game, indicating which screen is
 	/// currently being used
@@ -43,11 +44,16 @@ public static class GameController
 		_timeLeft -= (int)SwinGame.TimerTicks (GameTimer);
 		_timeLeft /= 1000;
 
-		if (_timeLeft < 0) {
+		if (_timeLeft < 0)
+		{
 			_timeLeft = 0;
+			timeleft = false;
 			SwitchState (GameState.EndingGame);
 		}
-
+		else
+		{
+			timeleft = true;
+		}
 		return _timeLeft;
 	}
 
