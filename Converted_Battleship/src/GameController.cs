@@ -20,6 +20,7 @@ public static class GameController
 
 	private static Stack<GameState> _state = new Stack<GameState>();
 
+	public static Timer _timer = SwinGame.CreateTimer ();
 	public static AIOption _aiSetting;
 	public static int avail;
 	public static int count;
@@ -29,6 +30,27 @@ public static class GameController
 	/// </summary>
 	/// <value>The current state</value>
 	/// <returns>The current state</returns>
+
+	public static Timer GameTimer {
+		get {
+			return _timer;
+		}
+	}
+
+	public static int TimeLeft (int time)
+	{
+		int _timeLeft = time;
+		_timeLeft -= (int)SwinGame.TimerTicks (GameTimer);
+		_timeLeft /= 1000;
+
+		if (_timeLeft < 0) {
+			_timeLeft = 0;
+			SwitchState (GameState.EndingGame);
+		}
+
+		return _timeLeft;
+	}
+
 	public static GameState CurrentState {
 		get { return _state.Peek(); }
 	}
@@ -330,18 +352,25 @@ public static class GameController
 
 		switch (CurrentState) {
 			case GameState.ViewingMainMenu:
+				SwinGame.StopTimer (GameTimer);
 				MenuController.DrawMainMenu();
 				break;
 			case GameState.ViewingGameMenu:
+				SwinGame.StopTimer (GameTimer);
 				MenuController.DrawGameMenu();
 				break;
 			case GameState.AlteringSettings:
+				SwinGame.StopTimer (GameTimer);
 				MenuController.DrawSettings();
 				break;
 			case GameState.Deploying:
+				SwinGame.ResetTimer (GameTimer);
 				DeploymentController.DrawDeployment();
 				break;
 			case GameState.Discovering:
+				if (SwinGame.TimerTicks (GameTimer) == 0){
+					SwinGame.StartTimer (GameTimer);
+				}
 				DiscoveryController.DrawDiscovery();
 				break;
 			case GameState.EndingGame:
