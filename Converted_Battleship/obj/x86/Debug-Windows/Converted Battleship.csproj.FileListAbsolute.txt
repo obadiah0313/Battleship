@@ -113,10 +113,6 @@ C:\Users\Low\Desktop\Battleship\Converted_Battleship\obj\x86\Debug-Windows\Conve
 C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Converted Battleship.exe
 C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\images\main.jpg
 C:\Battleship\Converted_Battleship\bin\Debug\Resources\images\main.jpg
-C:\Battleship\Converted_Battleship\bin\Debug\Resources\images\main1_page.jpg
-C:\Battleship\Converted_Battleship\bin\Debug\Resources\images\main2_page.png
-C:\Battleship\Converted_Battleship\bin\Debug\Resources\images\main2_page.jpg
-C:\Battleship\Converted_Battleship\bin\Debug\Resources\images\main3_page.jpg
 C:\Users\AlbertTCW\Desktop\New folder\Battleship\Converted_Battleship\bin\Debug\Resources\animations\startup.txt
 C:\Users\AlbertTCW\Desktop\New folder\Battleship\Converted_Battleship\bin\Debug\Resources\bundles\FileDialog.txt
 C:\Users\AlbertTCW\Desktop\New folder\Battleship\Converted_Battleship\bin\Debug\Resources\bundles\splash.txt

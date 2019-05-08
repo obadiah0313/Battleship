@@ -28,6 +28,8 @@ static class HighScoreController
 		public string Name;
 
 		public int Value;
+
+		public string Mode;
 		/// <summary>
 		/// Allows scores to be compared to facilitate sorting
 		/// </summary>
@@ -80,7 +82,8 @@ static class HighScoreController
 			line = input.ReadLine();
 
 			s.Name = line.Substring(0, NAME_WIDTH);
-			s.Value = Convert.ToInt32(line.Substring(NAME_WIDTH));
+			s.Value = Convert.ToInt32(line.Substring(3, NAME_WIDTH));
+			s.Mode = line.Substring (6);
 			_Scores.Add(s);
 		}
 		input.Close();
@@ -107,7 +110,7 @@ static class HighScoreController
 		output.WriteLine(_Scores.Count);
 
 		foreach (Score s in _Scores) {
-			output.WriteLine(s.Name + s.Value);
+			output.WriteLine(s.Name + s.Value + s.Mode);
 		}
 
 		output.Close();
@@ -136,9 +139,9 @@ static class HighScoreController
 
 			//for scores 1 - 9 use 01 - 09
 			if (i < 9) {
-				SwinGame.DrawText(" " + (i + 1) + ":   " + s.Name + "   " + s.Value, Color.White, GameResources.GameFont("Courier"), SCORES_LEFT, SCORES_TOP + i * SCORE_GAP);
+				SwinGame.DrawText(" " + (i + 1) + ":   " + s.Name + "   " + s.Value + "   " + s.Mode, Color.Black, GameResources.GameFont("Courier"), SCORES_LEFT, SCORES_TOP + i * SCORE_GAP);
 			} else {
-				SwinGame.DrawText(i + 1 + ":   " + s.Name + "   " + s.Value, Color.White, GameResources.GameFont("Courier"), SCORES_LEFT, SCORES_TOP + i * SCORE_GAP);
+				SwinGame.DrawText(i + 1 + ":   " + s.Name + "   " + s.Value + "   " + s.Mode, Color.Black, GameResources.GameFont("Courier"), SCORES_LEFT, SCORES_TOP + i * SCORE_GAP);
 			}
 		}
 	}
@@ -195,7 +198,7 @@ static class HighScoreController
 			if (s.Name.Length < 3) {
 				s.Name = s.Name + new string(Convert.ToChar(" "), 3 - s.Name.Length);
 			}
-
+			s.Mode = GameController.GetDiffucilty ();
 			_Scores.RemoveAt(_Scores.Count - 1);
 			_Scores.Add(s);
 			_Scores.Sort();

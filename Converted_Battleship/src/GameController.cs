@@ -398,6 +398,11 @@ public static class GameController
 		_aiSetting = setting;
 	}
 
+	public static string GetDiffucilty ()
+	{
+		return _aiSetting.ToString();
+	}
+
 	public static void PauseResumeMusic (ref string menustructure1, ref string menustructure2)
 	{
 		if (menustructure1 == "SOUND OFF" || menustructure2 == "SOUND OFF") {

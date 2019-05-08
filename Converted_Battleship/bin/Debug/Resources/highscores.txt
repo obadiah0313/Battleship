@@ -1,11 +1,11 @@
 10
-Wil165
-lil165
-qwe165
-   164
-wil164
-dsd164
-121164
-asd164
-Wil164
-asd164
+BBB165Medium
+CCC165Easy
+CCC165Medium
+AAA165Hard
+CCC100Hard
+BBB100Medium
+III100Hard
+HHH100Medium
+FFF100Hard
+GGG100Easy
