@@ -84,7 +84,32 @@ C:\Battleship\Converted_Battleship\bin\Debug\Resources\images\discover.jpg
 C:\Battleship\Converted_Battleship\bin\Debug\Resources\sounds\random.wav
 C:\Battleship\Converted_Battleship\bin\Debug\Resources\sounds\leftright.wav
 C:\Battleship\Converted_Battleship\bin\Debug\Resources\sounds\winner.wav
-C:\Battleship\Converted_Battleship\bin\Debug\Resources\images\main1_page.jpg
-C:\Battleship\Converted_Battleship\bin\Debug\Resources\images\main2_page.png
-C:\Battleship\Converted_Battleship\bin\Debug\Resources\images\main2_page.jpg
-C:\Battleship\Converted_Battleship\bin\Debug\Resources\images\main3_page.jpg
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\animations\startup.txt
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\bundles\FileDialog.txt
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\bundles\splash.txt
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\fonts\arial.ttf
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\fonts\cour.ttf
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\fonts\maven_pro_regular.ttf
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\panels\FileDialog.txt
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\sounds\error.wav
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\sounds\SwinGameStart.wav
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\SwinGame.icns
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\SwinGame.ico
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\images\help.png
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\sounds\background.mp3
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\images\discover.jpg
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\sounds\random.wav
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\sounds\leftright.wav
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\sounds\winner.wav
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\mscorlib.dll
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\SwinGame.dll
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\normidna.nlp
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\normnfc.nlp
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\normnfd.nlp
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\normnfkc.nlp
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\normnfkd.nlp
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\obj\x86\Debug-Windows\Converted Battleship.csprojResolveAssemblyReference.cache
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\obj\x86\Debug-Windows\Converted Battleship.exe
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Converted Battleship.exe
+C:\Users\Low\Desktop\Battleship\Converted_Battleship\bin\Debug\Resources\images\main.jpg
+C:\Battleship\Converted_Battleship\bin\Debug\Resources\images\main.jpg

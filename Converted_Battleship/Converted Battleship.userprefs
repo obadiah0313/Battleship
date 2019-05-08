@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{871B5A90-103A-46A5-BBB9-07C02B9851D1}|Default">
+<Properties StartupConfiguration="{871B5A90-103A-46A5-BBB9-07C02B9851D1}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Windows|x86" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -7,6 +7,7 @@
   <MonoDevelop.Ide.ItemProperties.Converted_220Battleship PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Converted_Battleship Status">
     <Files>
+<<<<<<< HEAD
       <File FileName="src\DeploymentController.cs" Line="111" Column="34" />
       <File FileName="src\GameResources.cs" Line="1" Column="1" />
       <File FileName="src\DiscoveryController.cs" Line="84" Column="46" />
@@ -18,19 +19,45 @@
       <File FileName="src\Model\AIEasyPlayer.cs" Line="1" Column="1" />
       <File FileName="src\GameState.cs" Line="16" Column="16" />
       <File FileName="src\HighScoreController.cs" Line="141" Column="71" />
+=======
+      <File FileName="src\EndingGameController.cs" Line="42" Column="4" />
+      <File FileName="src\DeploymentController.cs" Line="1" Column="9" />
+      <File FileName="src\DiscoveryController.cs" Line="1" Column="1" />
+      <File FileName="src\GameController.cs" Line="364" Column="61" />
+      <File FileName="src\GameLogic.cs" Line="10" Column="25" />
+      <File FileName="src\GameResources.cs" Line="7" Column="1" />
+      <File FileName="src\GameState.cs" Line="17" Column="13" />
+      <File FileName="src\HighScoreController.cs" Line="1" Column="1" />
+      <File FileName="src\MenuController.cs" Line="180" Column="25" />
+      <File FileName="src\UtilityFunctions.cs" Line="234" Column="30" />
+>>>>>>> 96b9bb8... fix bug
       <File FileName="src\Model\TileView.cs" Line="1" Column="1" />
-      <File FileName="src\Model\Tile.cs" Line="1" Column="1" />
       <File FileName="src\Model\ShipName.cs" Line="1" Column="1" />
-      <File FileName="src\Model\Ship.cs" Line="1" Column="1" />
-      <File FileName="src\Model\SeaGridAdapter.cs" Line="1" Column="1" />
+      <File FileName="src\Model\Tile.cs" Line="6" Column="11" />
+      <File FileName="src\Model\AIOption.cs" Line="1" Column="1" />
+      <File FileName="src\Model\AIPlayer.cs" Line="1" Column="1" />
+      <File FileName="src\Model\AttackResult.cs" Line="1" Column="1" />
+      <File FileName="src\Model\BattleShipsGame.cs" Line="1" Column="1" />
+      <File FileName="src\Model\Direction.cs" Line="1" Column="1" />
+      <File FileName="src\Model\ISeaGrid.cs" Line="1" Column="1" />
+      <File FileName="src\Model\Player.cs" Line="1" Column="1" />
       <File FileName="src\Model\ResultOfAttack.cs" Line="1" Column="1" />
       <File FileName="src\Model\SeaGrid.cs" Line="1" Column="1" />
+<<<<<<< HEAD
       <File FileName="src\Model\Player.cs" Line="1" Column="1" />
       <File FileName="src\Model\ISeaGrid.cs" Line="1" Column="1" />
       <File FileName="src\Model\Direction.cs" Line="1" Column="1" />
       <File FileName="src\Model\BattleShipsGame.cs" Line="1" Column="1" />
       <File FileName="src\Model\AttackResult.cs" Line="1" Column="1" />
       <File FileName="src\Model\AIPlayer.cs" Line="1" Column="1" />
+=======
+      <File FileName="src\Model\SeaGridAdapter.cs" Line="1" Column="1" />
+      <File FileName="src\Model\Ship.cs" Line="1" Column="1" />
+      <File FileName="src\Model\AIMediumPlayer.cs" Line="1" Column="1" />
+      <File FileName="src\Model\AIHardPlayer.cs" Line="1" Column="1" />
+      <File FileName="src\Model\AIEasyPlayer.cs" Line="1" Column="1" />
+      <File FileName="..\..\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" Line="1092" Column="20" />
+>>>>>>> 96b9bb8... fix bug
       <File FileName="Converted_Battleship Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
