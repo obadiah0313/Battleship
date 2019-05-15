@@ -141,3 +141,4 @@ C:\Users\AlbertTCW\Desktop\New folder\Battleship\Converted_Battleship\bin\Debug\
 C:\Users\AlbertTCW\Desktop\New folder\Battleship\Converted_Battleship\bin\Debug\normnfkd.nlp
 C:\Users\AlbertTCW\Desktop\New folder\Battleship\Converted_Battleship\obj\x86\Debug-Windows\Converted Battleship.csprojResolveAssemblyReference.cache
 C:\Users\AlbertTCW\Desktop\New folder\Battleship\Converted_Battleship\obj\x86\Debug-Windows\Converted Battleship.exe
+C:\Battleship\Converted_Battleship\bin\Debug\Resources\images\scorepage.jpg

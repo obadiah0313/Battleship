@@ -20,6 +20,7 @@ public static class GameResources
 	{
 		//Backgrounds
 		NewImage("Menu", "main.jpg");
+		NewImage ("Score", "scorepage.jpg");
 		NewImage ("Help", "help.png");
 		NewImage("Discovery", "discover.jpg");
 		NewImage("Deploy", "deploy.jpg");

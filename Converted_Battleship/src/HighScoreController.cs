@@ -139,9 +139,9 @@ static class HighScoreController
 
 			//for scores 1 - 9 use 01 - 09
 			if (i < 9) {
-				SwinGame.DrawText(" " + (i + 1) + ":   " + s.Name + "   " + s.Value + "   " + s.Mode, Color.Black, GameResources.GameFont("Courier"), SCORES_LEFT, SCORES_TOP + i * SCORE_GAP);
+				SwinGame.DrawText(" " + (i + 1) + ":   " + s.Name + "   " + s.Value + "   " + s.Mode, Color.White, GameResources.GameFont("Courier"), SCORES_LEFT, SCORES_TOP + i * SCORE_GAP);
 			} else {
-				SwinGame.DrawText(i + 1 + ":   " + s.Name + "   " + s.Value + "   " + s.Mode, Color.Black, GameResources.GameFont("Courier"), SCORES_LEFT, SCORES_TOP + i * SCORE_GAP);
+				SwinGame.DrawText(i + 1 + ":   " + s.Name + "   " + s.Value + "   " + s.Mode, Color.White, GameResources.GameFont("Courier"), SCORES_LEFT, SCORES_TOP + i * SCORE_GAP);
 			}
 		}
 	}
@@ -210,7 +210,7 @@ static class HighScoreController
 }
 
 //=======================================================
-//Service provided by Telerik (www.telerik.com)
+//Service provided by Telerik (www.telerik.comme)
 //Conversion powered by NRefactory.
 //Twitter: @telerik
 //Facebook: facebook.com/telerik

@@ -234,7 +234,11 @@ static class UtilityFunctions
 			case GameState.ViewingMainMenu:
 			case GameState.ViewingGameMenu:
 			case GameState.AlteringSettings:
+				SwinGame.DrawBitmap (GameResources.GameImage ("Menu"), 0, 0);
+				break;
 			case GameState.ViewingHighScores:
+				SwinGame.DrawBitmap (GameResources.GameImage ("Score"), 0, 0);
+				break;
 			case GameState.Help:
 				SwinGame.DrawBitmap(GameResources.GameImage("Menu"), 0, 0);
 				break;
